@@ -1,0 +1,8 @@
+name: list_accessors
+description: Provides getters and setters for items of lists, starting at the beginning and the end.
+version: 0.0.2
+author: Marcel Garus <marcel.garus@gmail.com>
+homepage: https://github.com/marcelgarus/list_accessors
+
+environment:
+  sdk: ">=2.6.0 <3.0.0"

@@ -65,7 +65,7 @@ def get_spelling(num: int, ordinal: bool = True):
 def generate_file_content(file, upper_bound=100):
     file.writelines([
         'library list_getters;\n\n',
-        'extension <T> on List<T> ListGetters {\n',
+        'extension ListGetters<T> on List<T> {\n',
         '  void _ensureThatIndexIsInBounds(String methodName, int index) {\n',
         '    if (index >= length) {\n',
         '      throw StateError(\n',
@@ -98,7 +98,7 @@ def generate_file_content(file, upper_bound=100):
             f"  ///\n",
             f"  /// Equivalent to `theList[{i}] = value`.\n"
             f" /// Throws a [StateError] if the list doesn't have a {spelling} element.\n",
-            f"  T set {spelling}(T value) => _setElement('{spelling}', {i});\n",
+            f"  void set {spelling}(T value) => _setElement('{spelling}', {i}, value);\n",
             f"\n"
         ])
     for i in range(1, upper_bound):
@@ -115,7 +115,7 @@ def generate_file_content(file, upper_bound=100):
             f"  ///\n",
             f"  /// Equivalent to `theList[theList.length - {i}] = value`.\n"
             f"  /// Throws a [StateError] if the list doesn't have a {spelling} last element.\n",
-            f"  T set {spelling}Last(T value) => _setElement('{spelling}Last', length - {i});\n",
+            f"  void set {spelling}Last(T value) => _setElement('{spelling}Last', length - {i}, value);\n",
             f"\n"
         ])
     file.write('}\n')

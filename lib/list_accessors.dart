@@ -1,6 +1,6 @@
 library list_getters;
 
-extension <T> on List<T> ListGetters {
+extension ListGetters<T> on List<T> {
   void _ensureThatIndexIsInBounds(String methodName, int index) {
     if (index >= length) {
       throw StateError(
@@ -29,7 +29,7 @@ extension <T> on List<T> ListGetters {
   ///
   /// Equivalent to `theList[1] = value`.
  /// Throws a [StateError] if the list doesn't have a second element.
-  T set second(T value) => _setElement('second', 1);
+  void set second(T value) => _setElement('second', 1, value);
 
   /// Returns the third element of the list.
   ///
@@ -41,7 +41,7 @@ extension <T> on List<T> ListGetters {
   ///
   /// Equivalent to `theList[2] = value`.
  /// Throws a [StateError] if the list doesn't have a third element.
-  T set third(T value) => _setElement('third', 2);
+  void set third(T value) => _setElement('third', 2, value);
 
   /// Returns the fourth element of the list.
   ///
@@ -53,7 +53,7 @@ extension <T> on List<T> ListGetters {
   ///
   /// Equivalent to `theList[3] = value`.
  /// Throws a [StateError] if the list doesn't have a fourth element.
-  T set fourth(T value) => _setElement('fourth', 3);
+  void set fourth(T value) => _setElement('fourth', 3, value);
 
   /// Returns the fifth element of the list.
   ///
@@ -65,7 +65,7 @@ extension <T> on List<T> ListGetters {
   ///
   /// Equivalent to `theList[4] = value`.
  /// Throws a [StateError] if the list doesn't have a fifth element.
-  T set fifth(T value) => _setElement('fifth', 4);
+  void set fifth(T value) => _setElement('fifth', 4, value);
 
   /// Returns the sixth element of the list.
   ///
@@ -77,7 +77,7 @@ extension <T> on List<T> ListGetters {
   ///
   /// Equivalent to `theList[5] = value`.
  /// Throws a [StateError] if the list doesn't have a sixth element.
-  T set sixth(T value) => _setElement('sixth', 5);
+  void set sixth(T value) => _setElement('sixth', 5, value);
 
   /// Returns the seventh element of the list.
   ///
@@ -89,7 +89,7 @@ extension <T> on List<T> ListGetters {
   ///
   /// Equivalent to `theList[6] = value`.
  /// Throws a [StateError] if the list doesn't have a seventh element.
-  T set seventh(T value) => _setElement('seventh', 6);
+  void set seventh(T value) => _setElement('seventh', 6, value);
 
   /// Returns the eighth element of the list.
   ///
@@ -101,7 +101,7 @@ extension <T> on List<T> ListGetters {
   ///
   /// Equivalent to `theList[7] = value`.
  /// Throws a [StateError] if the list doesn't have a eighth element.
-  T set eighth(T value) => _setElement('eighth', 7);
+  void set eighth(T value) => _setElement('eighth', 7, value);
 
   /// Returns the ninth element of the list.
   ///
@@ -113,7 +113,7 @@ extension <T> on List<T> ListGetters {
   ///
   /// Equivalent to `theList[8] = value`.
  /// Throws a [StateError] if the list doesn't have a ninth element.
-  T set ninth(T value) => _setElement('ninth', 8);
+  void set ninth(T value) => _setElement('ninth', 8, value);
 
   /// Returns the tenth element of the list.
   ///
@@ -125,7 +125,7 @@ extension <T> on List<T> ListGetters {
   ///
   /// Equivalent to `theList[9] = value`.
  /// Throws a [StateError] if the list doesn't have a tenth element.
-  T set tenth(T value) => _setElement('tenth', 9);
+  void set tenth(T value) => _setElement('tenth', 9, value);
 
   /// Returns the eleventh element of the list.
   ///
@@ -137,7 +137,7 @@ extension <T> on List<T> ListGetters {
   ///
   /// Equivalent to `theList[10] = value`.
  /// Throws a [StateError] if the list doesn't have a eleventh element.
-  T set eleventh(T value) => _setElement('eleventh', 10);
+  void set eleventh(T value) => _setElement('eleventh', 10, value);
 
   /// Returns the twelvth element of the list.
   ///
@@ -149,7 +149,7 @@ extension <T> on List<T> ListGetters {
   ///
   /// Equivalent to `theList[11] = value`.
  /// Throws a [StateError] if the list doesn't have a twelvth element.
-  T set twelvth(T value) => _setElement('twelvth', 11);
+  void set twelvth(T value) => _setElement('twelvth', 11, value);
 
   /// Returns the thirteenth element of the list.
   ///
@@ -161,7 +161,7 @@ extension <T> on List<T> ListGetters {
   ///
   /// Equivalent to `theList[12] = value`.
  /// Throws a [StateError] if the list doesn't have a thirteenth element.
-  T set thirteenth(T value) => _setElement('thirteenth', 12);
+  void set thirteenth(T value) => _setElement('thirteenth', 12, value);
 
   /// Returns the fourteenth element of the list.
   ///
@@ -173,7 +173,7 @@ extension <T> on List<T> ListGetters {
   ///
   /// Equivalent to `theList[13] = value`.
  /// Throws a [StateError] if the list doesn't have a fourteenth element.
-  T set fourteenth(T value) => _setElement('fourteenth', 13);
+  void set fourteenth(T value) => _setElement('fourteenth', 13, value);
 
   /// Returns the fifteenth element of the list.
   ///
@@ -185,7 +185,7 @@ extension <T> on List<T> ListGetters {
   ///
   /// Equivalent to `theList[14] = value`.
  /// Throws a [StateError] if the list doesn't have a fifteenth element.
-  T set fifteenth(T value) => _setElement('fifteenth', 14);
+  void set fifteenth(T value) => _setElement('fifteenth', 14, value);
 
   /// Returns the sixteenth element of the list.
   ///
@@ -197,7 +197,7 @@ extension <T> on List<T> ListGetters {
   ///
   /// Equivalent to `theList[15] = value`.
  /// Throws a [StateError] if the list doesn't have a sixteenth element.
-  T set sixteenth(T value) => _setElement('sixteenth', 15);
+  void set sixteenth(T value) => _setElement('sixteenth', 15, value);
 
   /// Returns the seventeenth element of the list.
   ///
@@ -209,7 +209,7 @@ extension <T> on List<T> ListGetters {
   ///
   /// Equivalent to `theList[16] = value`.
  /// Throws a [StateError] if the list doesn't have a seventeenth element.
-  T set seventeenth(T value) => _setElement('seventeenth', 16);
+  void set seventeenth(T value) => _setElement('seventeenth', 16, value);
 
   /// Returns the eighteenth element of the list.
   ///
@@ -221,7 +221,7 @@ extension <T> on List<T> ListGetters {
   ///
   /// Equivalent to `theList[17] = value`.
  /// Throws a [StateError] if the list doesn't have a eighteenth element.
-  T set eighteenth(T value) => _setElement('eighteenth', 17);
+  void set eighteenth(T value) => _setElement('eighteenth', 17, value);
 
   /// Returns the nineteenth element of the list.
   ///
@@ -233,7 +233,7 @@ extension <T> on List<T> ListGetters {
   ///
   /// Equivalent to `theList[18] = value`.
  /// Throws a [StateError] if the list doesn't have a nineteenth element.
-  T set nineteenth(T value) => _setElement('nineteenth', 18);
+  void set nineteenth(T value) => _setElement('nineteenth', 18, value);
 
   /// Returns the twentieth element of the list.
   ///
@@ -245,7 +245,7 @@ extension <T> on List<T> ListGetters {
   ///
   /// Equivalent to `theList[19] = value`.
  /// Throws a [StateError] if the list doesn't have a twentieth element.
-  T set twentieth(T value) => _setElement('twentieth', 19);
+  void set twentieth(T value) => _setElement('twentieth', 19, value);
 
   /// Returns the second last element of the list.
   ///
@@ -257,7 +257,7 @@ extension <T> on List<T> ListGetters {
   ///
   /// Equivalent to `theList[theList.length - 2] = value`.
   /// Throws a [StateError] if the list doesn't have a second last element.
-  T set secondLast(T value) => _setElement('secondLast', length - 2);
+  void set secondLast(T value) => _setElement('secondLast', length - 2, value);
 
   /// Returns the third last element of the list.
   ///
@@ -269,7 +269,7 @@ extension <T> on List<T> ListGetters {
   ///
   /// Equivalent to `theList[theList.length - 3] = value`.
   /// Throws a [StateError] if the list doesn't have a third last element.
-  T set thirdLast(T value) => _setElement('thirdLast', length - 3);
+  void set thirdLast(T value) => _setElement('thirdLast', length - 3, value);
 
   /// Returns the fourth last element of the list.
   ///
@@ -281,7 +281,7 @@ extension <T> on List<T> ListGetters {
   ///
   /// Equivalent to `theList[theList.length - 4] = value`.
   /// Throws a [StateError] if the list doesn't have a fourth last element.
-  T set fourthLast(T value) => _setElement('fourthLast', length - 4);
+  void set fourthLast(T value) => _setElement('fourthLast', length - 4, value);
 
   /// Returns the fifth last element of the list.
   ///
@@ -293,7 +293,7 @@ extension <T> on List<T> ListGetters {
   ///
   /// Equivalent to `theList[theList.length - 5] = value`.
   /// Throws a [StateError] if the list doesn't have a fifth last element.
-  T set fifthLast(T value) => _setElement('fifthLast', length - 5);
+  void set fifthLast(T value) => _setElement('fifthLast', length - 5, value);
 
   /// Returns the sixth last element of the list.
   ///
@@ -305,7 +305,7 @@ extension <T> on List<T> ListGetters {
   ///
   /// Equivalent to `theList[theList.length - 6] = value`.
   /// Throws a [StateError] if the list doesn't have a sixth last element.
-  T set sixthLast(T value) => _setElement('sixthLast', length - 6);
+  void set sixthLast(T value) => _setElement('sixthLast', length - 6, value);
 
   /// Returns the seventh last element of the list.
   ///
@@ -317,7 +317,7 @@ extension <T> on List<T> ListGetters {
   ///
   /// Equivalent to `theList[theList.length - 7] = value`.
   /// Throws a [StateError] if the list doesn't have a seventh last element.
-  T set seventhLast(T value) => _setElement('seventhLast', length - 7);
+  void set seventhLast(T value) => _setElement('seventhLast', length - 7, value);
 
   /// Returns the eighth last element of the list.
   ///
@@ -329,7 +329,7 @@ extension <T> on List<T> ListGetters {
   ///
   /// Equivalent to `theList[theList.length - 8] = value`.
   /// Throws a [StateError] if the list doesn't have a eighth last element.
-  T set eighthLast(T value) => _setElement('eighthLast', length - 8);
+  void set eighthLast(T value) => _setElement('eighthLast', length - 8, value);
 
   /// Returns the ninth last element of the list.
   ///
@@ -341,7 +341,7 @@ extension <T> on List<T> ListGetters {
   ///
   /// Equivalent to `theList[theList.length - 9] = value`.
   /// Throws a [StateError] if the list doesn't have a ninth last element.
-  T set ninthLast(T value) => _setElement('ninthLast', length - 9);
+  void set ninthLast(T value) => _setElement('ninthLast', length - 9, value);
 
   /// Returns the tenth last element of the list.
   ///
@@ -353,7 +353,7 @@ extension <T> on List<T> ListGetters {
   ///
   /// Equivalent to `theList[theList.length - 10] = value`.
   /// Throws a [StateError] if the list doesn't have a tenth last element.
-  T set tenthLast(T value) => _setElement('tenthLast', length - 10);
+  void set tenthLast(T value) => _setElement('tenthLast', length - 10, value);
 
   /// Returns the eleventh last element of the list.
   ///
@@ -365,7 +365,7 @@ extension <T> on List<T> ListGetters {
   ///
   /// Equivalent to `theList[theList.length - 11] = value`.
   /// Throws a [StateError] if the list doesn't have a eleventh last element.
-  T set eleventhLast(T value) => _setElement('eleventhLast', length - 11);
+  void set eleventhLast(T value) => _setElement('eleventhLast', length - 11, value);
 
   /// Returns the twelvth last element of the list.
   ///
@@ -377,7 +377,7 @@ extension <T> on List<T> ListGetters {
   ///
   /// Equivalent to `theList[theList.length - 12] = value`.
   /// Throws a [StateError] if the list doesn't have a twelvth last element.
-  T set twelvthLast(T value) => _setElement('twelvthLast', length - 12);
+  void set twelvthLast(T value) => _setElement('twelvthLast', length - 12, value);
 
   /// Returns the thirteenth last element of the list.
   ///
@@ -389,7 +389,7 @@ extension <T> on List<T> ListGetters {
   ///
   /// Equivalent to `theList[theList.length - 13] = value`.
   /// Throws a [StateError] if the list doesn't have a thirteenth last element.
-  T set thirteenthLast(T value) => _setElement('thirteenthLast', length - 13);
+  void set thirteenthLast(T value) => _setElement('thirteenthLast', length - 13, value);
 
   /// Returns the fourteenth last element of the list.
   ///
@@ -401,7 +401,7 @@ extension <T> on List<T> ListGetters {
   ///
   /// Equivalent to `theList[theList.length - 14] = value`.
   /// Throws a [StateError] if the list doesn't have a fourteenth last element.
-  T set fourteenthLast(T value) => _setElement('fourteenthLast', length - 14);
+  void set fourteenthLast(T value) => _setElement('fourteenthLast', length - 14, value);
 
   /// Returns the fifteenth last element of the list.
   ///
@@ -413,7 +413,7 @@ extension <T> on List<T> ListGetters {
   ///
   /// Equivalent to `theList[theList.length - 15] = value`.
   /// Throws a [StateError] if the list doesn't have a fifteenth last element.
-  T set fifteenthLast(T value) => _setElement('fifteenthLast', length - 15);
+  void set fifteenthLast(T value) => _setElement('fifteenthLast', length - 15, value);
 
   /// Returns the sixteenth last element of the list.
   ///
@@ -425,7 +425,7 @@ extension <T> on List<T> ListGetters {
   ///
   /// Equivalent to `theList[theList.length - 16] = value`.
   /// Throws a [StateError] if the list doesn't have a sixteenth last element.
-  T set sixteenthLast(T value) => _setElement('sixteenthLast', length - 16);
+  void set sixteenthLast(T value) => _setElement('sixteenthLast', length - 16, value);
 
   /// Returns the seventeenth last element of the list.
   ///
@@ -437,7 +437,7 @@ extension <T> on List<T> ListGetters {
   ///
   /// Equivalent to `theList[theList.length - 17] = value`.
   /// Throws a [StateError] if the list doesn't have a seventeenth last element.
-  T set seventeenthLast(T value) => _setElement('seventeenthLast', length - 17);
+  void set seventeenthLast(T value) => _setElement('seventeenthLast', length - 17, value);
 
   /// Returns the eighteenth last element of the list.
   ///
@@ -449,7 +449,7 @@ extension <T> on List<T> ListGetters {
   ///
   /// Equivalent to `theList[theList.length - 18] = value`.
   /// Throws a [StateError] if the list doesn't have a eighteenth last element.
-  T set eighteenthLast(T value) => _setElement('eighteenthLast', length - 18);
+  void set eighteenthLast(T value) => _setElement('eighteenthLast', length - 18, value);
 
   /// Returns the nineteenth last element of the list.
   ///
@@ -461,7 +461,7 @@ extension <T> on List<T> ListGetters {
   ///
   /// Equivalent to `theList[theList.length - 19] = value`.
   /// Throws a [StateError] if the list doesn't have a nineteenth last element.
-  T set nineteenthLast(T value) => _setElement('nineteenthLast', length - 19);
+  void set nineteenthLast(T value) => _setElement('nineteenthLast', length - 19, value);
 
   /// Returns the twentieth last element of the list.
   ///
@@ -473,6 +473,6 @@ extension <T> on List<T> ListGetters {
   ///
   /// Equivalent to `theList[theList.length - 20] = value`.
   /// Throws a [StateError] if the list doesn't have a twentieth last element.
-  T set twentiethLast(T value) => _setElement('twentiethLast', length - 20);
+  void set twentiethLast(T value) => _setElement('twentiethLast', length - 20, value);
 
 }
